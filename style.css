@@ -1,0 +1,215 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.header {
+    top:0
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 10vh;
+    font-family: "Roboto Mono", monospace;
+    background-color: #000000;
+    height: auto;
+    floate:none;
+    width:100%;
+}
+.nav{position:fixed;background: #000000; margin-right: 0; width: 100%; top:0;
+}
+
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 20px 36px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: inherit;
+    font-family: inherit;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #36dbf5;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+}
+.button:hover, .button:focus {
+    color: #ffffff;
+    background-color: #36dbf5;
+    box-shadow: 0 0 12px #36dbf5, 0 0 40px #36dbf5, 0 0 80px #36dbf5;
+    transition-delay: 0.26s;
+}
+.button:active {
+    box-shadow: 0 0 8px #36dbf5, 0 0 16px #36dbf5, 0 0 32px #36dbf5;
+    transition-delay: 0s;
+}
+.button__line {
+    position: absolute;
+    border-radius: 2px;
+}
+.button__line--top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+    background-image: linear-gradient(to right, transparent, #36dbf5);
+}
+.button:hover .button__line--top, .button:focus .button__line--top {
+    transform: translateX(100%);
+    transition: 0.26s 0.25s;
+}
+.button__line--bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+    background-image: linear-gradient(to left, transparent, #36dbf5);
+}
+.button:hover .button__line--bottom, .button:focus .button__line--bottom {
+    transform: translateX(-100%);
+    transition: 0.26s 0.25s;
+}
+.button__line--left {
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+    background-image: linear-gradient(to top, transparent, #36dbf5);
+}
+.button:hover .button__line--left, .button:focus .button__line--left {
+    transform: translateY(-100%);
+    transition: 0.26s;
+}
+.button__line--right {
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+    background-image: linear-gradient(to bottom, transparent, #36dbf5);
+}
+.button:hover .button__line--right, .button:focus .button__line--right {
+    transform: translateY(100%);
+    transition: 0.26s;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.content{font-size: 16;
+    color: #ffffff;
+    background-image: url("images/space/space stars2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: inherit;
+    margin-right:0;
+    margin-top:0;
+    margin-bottom:0px;
+    margin-left: 0;
+    padding-bottom: 100px;
+    width:100%;
+    height:auto;
+}
+
+.myFooter{
+    width: 100%;
+    min-width: 1px;
+    position: fixed;
+    display: flex;
+    /*background-image: url("images/gradient.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    min-height: 10vh;
+    font-family: "Roboto Mono", monospace;
+    height:10vh;
+    floate:none;
+    width:100%;
+    bottom:0px;
+    background:linear-gradient(87deg,#3023ae,#53a0fd 41%,#ec51e8);
+}
+
+/*.container{*/
+/*    height:20vh;*/
+/*    display: flex;*/
+/*    justify-content:center;*/
+/*    align-items: center;*/
+
+/*}*/
+
+
+/*.social{*/
+/*    color:#fff;*/
+/*    list-style:none;*/
+/*    padding:0;*/
+/*    display:flex;*/
+/*    justify-content: space-between;*/
+/*    width: 250px;*/
+/*}*/
+
+/*.social-item{*/
+/*    height:30px;*/
+/*    width: 30px;*/
+/*    border-radius:50%;*/
+/*    border:5px solid #fff;*/
+/*    display:flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-size: 15px; !*Размер иконки внутри*!*/
+/*    transition: all 0.5s;*/
+/*}*/
+
+/*a{*/
+/*    pointer-events: none;*/
+/*    cursor: default;*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
+
+/*.facebook:hover{*/
+/*    border-color:#3c5998;*/
+/*    box-shadow:0px 0px 35px #3c5998;*/
+/*    color:#3c5998;*/
+/*}*/
+
+/*.instagram:hover{*/
+/*    box-shadow:0px 0px 35px ;*/
+/*    background:linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);*/
+/*}*/
+
+/*.telegram:hover{*/
+/*    border-color:#03A9F4;*/
+/*    box-shadow:0px 0px 35px #03A9F4;*/
+/*    color:#03A9F4;*/
+/*}*/
+
+/*.vk:hover{*/
+/*    border-color:#4a76a8;*/
+/*    box-shadow:0px 0px 35px #4a76a8;*/
+/*    color:#4a76a8;*/
+/*}*/
+
+/*.google:hover{*/
+/*    border-color:#ea4335;*/
+/*    box-shadow:0px 0px 35px #ea4335;*/
+/*    color:#ea4335;*/
+/*}*/
+
+
